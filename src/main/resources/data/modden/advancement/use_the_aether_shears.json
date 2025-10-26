@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "id": "modden:soul"
+    },
+    "title": "Soul Extractor",
+    "description": "Cut out your soul from your body using The Aether Shears",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "minecraft:adventure/root",
+  "criteria": {
+    "snip_off_ya_soul": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "item": {
+          "items": "modden:the_aether_shears"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "snip_off_ya_soul"
+    ]
+  ],
+  "rewards": {
+    "function": "modden:get_soul"
+  }
+}

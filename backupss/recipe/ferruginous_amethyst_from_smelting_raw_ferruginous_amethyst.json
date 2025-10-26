@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cooking_time": 200,
+  "experience": 0.2,
+  "group": "ferruginous_amethyst",
+  "ingredient": {
+    "item": "modden:raw_ferruginous_amethyst"
+  },
+  "result": {
+    "id": "modden:ferruginous_amethyst"
+  }
+}

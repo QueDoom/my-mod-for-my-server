@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": { "item": "modden:netherite_chunk" },
+    "S": { "item": "modden:soul"},
+    "F": { "item": "modden:ferruginous_amethyst_block"}
+  },
+  "pattern": [
+    "NSN",
+    " N ",
+    "FFF"
+  ],
+  "result": {
+    "count": 1,
+    "id": "modden:aether_portal"
+  }
+}

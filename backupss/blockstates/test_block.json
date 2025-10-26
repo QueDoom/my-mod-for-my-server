@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "modden:block/test_block"
+    }
+  }
+}

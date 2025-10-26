@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    { "item": "minecraft:amethyst_shard" },
+    { "item": "minecraft:raw_iron" }
+  ],
+  "result": {
+    "count": 1,
+    "id": "modden:raw_ferruginous_amethyst"
+  }
+}

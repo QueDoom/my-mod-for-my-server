@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": { "item": "modden:ferruginous_amethyst" }
+  },
+  "pattern": [
+    "FF ",
+    "FF ",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "modden:ferruginous_amethyst_block"
+  }
+}
