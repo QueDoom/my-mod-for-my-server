@@ -21,4 +21,5 @@ public class TheOrbItem extends Item {
         }
         super.inventoryTick(stack, world, entity, slot, selected);
     }
+
 }

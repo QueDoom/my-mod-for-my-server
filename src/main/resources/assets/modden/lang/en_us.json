@@ -10,9 +10,13 @@
   "item.modden.netherite_chunk": "Netherite Chunk",
 
   "item.modden.etherial_gummy": "Etherial Gummy",
+  "tooltip.modden.etherial_gummy": "Be careful this might leak your cords!",
 
   "block.modden.test_block": "Test Block",
   "block.modden.ferruginous_amethyst_block": "Ferruginous Amethyst Block",
+
+  "block.modden.chunk_protector":  "Chunk Protector",
+  "block.modden.sleeper":  "Debug: Sleeper",
 
   "effect.modden.the_orb_effect": "The Orbs Power"
 }

@@ -3,7 +3,9 @@
 	"package": "net.quedoom.modden.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+        "ExampleMixin",
+      "DontDropTheOrbMixin",
+      "DontStoreTheOrbMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

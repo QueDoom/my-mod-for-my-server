@@ -4,8 +4,13 @@ import com.mojang.serialization.MapCodec;
 import net.minecraft.block.*;
 
 import net.minecraft.block.entity.BlockEntity;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.ItemStack;
+import net.minecraft.network.packet.s2c.play.ScreenHandlerPropertyUpdateS2CPacket;
 import net.minecraft.util.ActionResult;
+import net.minecraft.util.Hand;
+import net.minecraft.util.ItemActionResult;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
@@ -48,8 +53,20 @@ public class ChunkProtectorBlock extends BlockWithEntity implements BlockEntityP
 
     @Override
     protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
-        var playerUuid = player.getUuid();
+        if (!(world.getBlockEntity(pos) instanceof ChunkProtectorBlockEntity chunkProtectorBlockEntity)) {
+            return super.onUse(state, world, pos, player, hit);
+        }
+        chunkProtectorBlockEntity.setActive(chunkProtectorBlockEntity.getUuid() == player.getUuid());
+        return ActionResult.SUCCESS;
+    }
 
-        return super.onUse(state, world, pos, player, hit);
+    @Override
+    public void onPlaced(World world, BlockPos pos, BlockState state, @Nullable LivingEntity placer, ItemStack itemStack) {
+        if ((world.getBlockEntity(pos) instanceof ChunkProtectorBlockEntity chunkProtectorBlockEntity)) {
+            if (placer instanceof PlayerEntity player) {
+                chunkProtectorBlockEntity.setUuid(player.getUuid());
+            }
+        }
+
     }
 }

@@ -22,7 +22,7 @@ public class ModEffects {
                             Identifier.of(ModTillServer.MOD_ID, "the_orb_effect"), 3f,
                             EntityAttributeModifier.Operation.ADD_VALUE)
                     .addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED,
-                            Identifier.of(ModTillServer.MOD_ID, "the_orb_effect"), 1.1f,
+                            Identifier.of(ModTillServer.MOD_ID, "the_orb_effect"), 1.01f,
                             EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
                     .addAttributeModifier(EntityAttributes.GENERIC_ATTACK_DAMAGE,
                             Identifier.of(ModTillServer.MOD_ID, "the_orb_effect"), 3f,

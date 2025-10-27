@@ -1,0 +1,27 @@
+The Orb:
+    Shields
+    No dropping
+    No container
+    Killing transfer
+    all the messages
+    Dropped in void
+
+Chunk protector:
+    Figure out how to render it in the first place
+    render the border (red for enemies and green for the creator)
+    Right click to activate
+
+Sleeper:
+    Render
+    Render item (orb) above
+    spawn zzz particles correctly
+    kill player on break
+
+Fix the actual server:
+    Download ubuntu
+    set up the thing
+    amp
+    netlify
+    fabric
+    launch
+    cry or not cry :)

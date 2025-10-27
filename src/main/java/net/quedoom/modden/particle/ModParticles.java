@@ -1,0 +1,25 @@
+package net.quedoom.modden.particle;
+
+import com.mojang.serialization.Decoder;
+import net.fabricmc.fabric.api.particle.v1.FabricParticleTypes;
+import net.minecraft.particle.SimpleParticleType;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.Identifier;
+import net.quedoom.modden.ModTillServer;
+
+public class ModParticles {
+
+    public static final SimpleParticleType ZZZ_PARTICLE =
+            registerParticle("zzz_particle", FabricParticleTypes.simple());
+
+    private static SimpleParticleType registerParticle(String name, SimpleParticleType particleType) {
+        return Registry.register(Registries.PARTICLE_TYPE, Identifier.of(ModTillServer.MOD_ID, name), particleType);
+    }
+
+    public static void registerParticles() {
+        ModTillServer.LOGGER.info("Registering Particles for " + ModTillServer.MOD_ID);
+
+
+    }
+}

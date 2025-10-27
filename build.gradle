@@ -18,6 +18,7 @@ repositories {
             includeGroup("software.bernie.geckolib")
         }
     }
+
 }
 
 fabricApi {
@@ -36,7 +37,7 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
     // aether
-    modImplementation("com.aetherteam.aether:aether:${project.aether_version}")
+    //modImplementation("com.aetherteam.aether:aether:${project.aether_version}")
 
 }
 
@@ -81,7 +82,7 @@ publishing {
 
 	// See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
 	repositories {
-        maven { url = "https://packages.aether-mod.net/The-Aether" }
+        //maven { url = "https://packages.aether-mod.net/The-Aether" }
 
 	}
 }
