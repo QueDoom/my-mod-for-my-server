@@ -2,7 +2,7 @@
 	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
 	"textures": {
-		"particle": "modden:block/glowstone",
+		"particle": "minecraft:block/glowstone",
 		"portal": "modden:item/aether_portal",
 		"frame": "minecraft:block/glowstone"
 	},

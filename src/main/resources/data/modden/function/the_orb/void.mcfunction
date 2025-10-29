@@ -1,0 +1,1 @@
+execute as @e[type=item,nbt={Item:{id:"modden:the_orb"}}] at @s if entity @s[y=-1,dy=-100] run function modden:the_orb/is_void

@@ -1,2 +1,2 @@
 tellraw @s {"color":"red","hoverEvent":{"action":"show_text","value":[{"text":"","color":"red"}]},"text":"Are you sure you want to START THE GAME?"}
-tellraw @s {color:"green","clickEvent":{"action":"run_command","value":"function modden:do_not_run_these/run_start_sequence_instead/prepare"},"color":"red","hoverEvent":{"action":"show_text","value":[{"text":"WARNING IT WILL CLEAR EVERYONWE AND TELEPORT THEM TO SPAWN!","color":"red"}]},"text":"Yes"}
+tellraw @s {"color:"green","clickEvent":{"action":"run_command","value":"function modden:do_not_run_these/run_start_sequence_instead/prepare"},"color":"red","hoverEvent":{"action":"show_text","value":[{"text":"WARNING IT WILL CLEAR EVERYONWE AND TELEPORT THEM TO SPAWN!","color":"red"}]},"text":"Yes"}

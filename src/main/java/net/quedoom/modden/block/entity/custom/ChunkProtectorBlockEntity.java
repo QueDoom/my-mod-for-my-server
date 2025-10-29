@@ -14,7 +14,7 @@ import java.util.UUID;
 public class ChunkProtectorBlockEntity extends BlockEntity implements GeoBlockEntity {
     protected static final RawAnimation ACTIVATE_ANIMATION = RawAnimation.begin().thenPlayXTimes("activate", 1).thenLoop("activated");
 
-    private UUID uuid = UUID.fromString("");
+    private UUID uuid;
     private Boolean active = false;
     public UUID getUuid() {
         return uuid;

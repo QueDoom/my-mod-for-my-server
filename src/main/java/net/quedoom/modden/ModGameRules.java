@@ -8,7 +8,7 @@ import net.quedoom.modden.item.ModItems;
 public class ModGameRules {
 
     public static final GameRules.Key<GameRules.BooleanRule> HAS_ORB =
-            GameRuleRegistry.register("hasOrb", GameRules.Category.MISC, GameRuleFactory.createBooleanRule(true));
+            GameRuleRegistry.register("hasOrb", GameRules.Category.MISC, GameRuleFactory.createBooleanRule(false));
 
     public static void registerGamerules() {
         ModTillServer.LOGGER.info("Registering Mod Game Rules for " + ModTillServer.MOD_ID);
