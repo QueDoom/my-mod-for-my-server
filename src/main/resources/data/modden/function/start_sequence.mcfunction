@@ -1,0 +1,1 @@
+tellraw @s {"clickEvent":{"action":"run_command","value":"function modden:do_not_run_these/run_start_sequence_instead/this_will_reset_everyone"},"hoverEvent":{"action":"show_text","value":[{"text":"WARNING IT WILL CLEAR EVERYONWE AND TELEPORT THEM TO SPAWN!","color":"red"}]},"text":"Click this to start the game. "}
