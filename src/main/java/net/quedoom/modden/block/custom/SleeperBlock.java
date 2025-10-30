@@ -15,6 +15,7 @@ public class SleeperBlock extends BlockWithEntity implements BlockEntityProvider
 
     protected SleeperBlock(Settings settings) {
         super(settings);
+        setDefaultState(this.stateManager.getDefaultState().with(FACING, Direction.NORTH));
     }
 
     public static VoxelShape getSHAPE() {
