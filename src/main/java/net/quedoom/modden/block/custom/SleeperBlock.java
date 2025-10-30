@@ -17,6 +17,15 @@ public class SleeperBlock extends BlockWithEntity implements BlockEntityProvider
         super(settings);
         setDefaultState(this.stateManager.getDefaultState().with(FACING, Direction.NORTH));
     }
+    @Override
+    protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
+        builder.add(FACING);
+    }
+    @Nullable
+    @Override
+    public BlockState getPlacementState(ItemPlacementContext ctx) {
+        return this.getDefaultState().with(FACING, getRandomDirection());
+    }
 
     public static VoxelShape getSHAPE() {
         return SHAPE;
