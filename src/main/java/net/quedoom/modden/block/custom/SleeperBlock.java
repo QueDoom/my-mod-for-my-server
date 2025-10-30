@@ -8,6 +8,7 @@ import net.minecraft.util.shape.VoxelShape;
 import org.jetbrains.annotations.Nullable;
 
 public class SleeperBlock extends BlockWithEntity implements BlockEntityProvider {
+    public static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
     private static final VoxelShape SHAPE =
             Block.createCuboidShape(0, 0, 0, 16, 2, 16)
             ;
